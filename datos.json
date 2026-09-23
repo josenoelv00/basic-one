@@ -1,0 +1,82 @@
+{
+  "tituloPagina": "Mi bautizo · Jimena Ávila",
+  "idioma": "es-MX",
+  "zonaHoraria": "America/Mexico_City",
+  "invitado": {
+    "id": "invitado-ejemplo-001",
+    "nombre": "Familia García",
+    "contacto": "",
+    "pases": {
+      "adultos": 2,
+      "ninos": 1
+    },
+    "respuesta": {
+      "asistencia": "pendiente",
+      "adultos": 0,
+      "ninos": 0,
+      "mensaje": ""
+    }
+  },
+  "portada": {
+    "introduccion": "Acompáñame a celebrar",
+    "titulo": "Mi bautizo",
+    "protagonista": "Jimena Ávila"
+  },
+  "mensaje": {
+    "titulo": "",
+    "texto": ""
+  },
+  "familia": {
+    "titulo": "Con el amor de mi familia",
+    "grupos": [
+      {
+        "titulo": "Mis padres",
+        "nombres": [
+          "Simón Muñoz",
+          "Natalia Rojas"
+        ]
+      },
+      {
+        "titulo": "Mis padrinos",
+        "nombres": [
+          "Omar Corrales",
+          "Susana Ortiz"
+        ]
+      }
+    ]
+  },
+  "evento": {
+    "inicio": "2031-08-30T10:00:00-06:00",
+    "fin": "2031-08-30T18:00:00-06:00",
+    "titulo": "Bautizo de Jimena Ávila",
+    "descripcion": "Acompáñanos a celebrar el bautizo de Jimena. Invitación de muestra.",
+    "lugar": "Lugar Cualquiera",
+    "mensajeFinalContador": "¡Llegó el día de celebrar!"
+  },
+  "ubicaciones": [
+    {
+      "titulo": "Ceremonia",
+      "nombre": "Lugar Cualquiera",
+      "direccion": "",
+      "hora": "10:00",
+      "mapaUrl": "",
+      "icono": "iglesia"
+    },
+    {
+      "titulo": "Recepción",
+      "nombre": "Cualquier Lugar",
+      "direccion": "Calle Cualquiera 123",
+      "hora": "10:00",
+      "mapaUrl": "",
+      "icono": "recepcion"
+    }
+  ],
+  "itinerario": [],
+  "confirmacion": {
+    "mensaje": "Será una alegría compartir este día contigo."
+  },
+  "notas": {
+    "titulo": "",
+    "texto": ""
+  }
+}

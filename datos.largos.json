@@ -1,0 +1,66 @@
+{
+  "tituloPagina": "Invitación de prueba — contenido largo",
+  "idioma": "es-MX",
+  "zonaHoraria": "America/Mexico_City",
+  "invitado": {
+    "id": "invitado-prueba-contenido-largo-001",
+    "nombre": "Familia de María Fernanda de los Ángeles Hernández Villaseñor y José Alejandro Martínez del Río",
+    "contacto": "",
+    "pases": { "adultos": 6, "ninos": 4 },
+    "respuesta": {
+      "asistencia": "si",
+      "adultos": 4,
+      "ninos": 3,
+      "mensaje": "Muchas gracias por invitarnos a compartir una celebración tan especial. Nos dará mucho gusto acompañarlos y reunirnos con toda la familia. Llegaremos con un poco de anticipación para encontrar el acceso y acomodarnos sin interrumpir la ceremonia. Uno de los niños llevará su carriola; agradeceremos que nos indiquen dónde podemos dejarla durante la recepción. Este mensaje es ficticio y sirve para revisar un campo con contenido extenso."
+    }
+  },
+  "portada": {
+    "introduccion": "Con mucha alegría y en compañía de las personas que han formado parte de nuestra historia, queremos invitarte a compartir un día lleno de encuentros, recuerdos y momentos especiales.",
+    "titulo": "Celebración de un día muy especial en compañía de toda nuestra familia y nuestros amigos",
+    "protagonista": "María Fernanda de los Ángeles y José Alejandro de la Santísima Trinidad"
+  },
+  "mensaje": {
+    "titulo": "Hay momentos que se vuelven inolvidables cuando los compartimos con quienes más queremos",
+    "texto": "Esta invitación es una muestra con información ficticia para comprobar la lectura de textos largos en diferentes tamaños de pantalla. Queremos reunir a las personas que nos han acompañado en cada etapa y agradecerles su cariño, su tiempo y todos los recuerdos que hemos construido juntos. Hemos preparado una jornada para conversar, compartir la mesa, tomar fotografías y disfrutar sin prisas. Sabemos que algunos viajarán desde otras ciudades y que otros harán un espacio entre sus actividades; por eso valoramos especialmente su presencia. Esperamos que encuentren aquí la información necesaria para organizar su llegada y acompañarnos desde el inicio hasta el último momento de la celebración."
+  },
+  "familia": {
+    "titulo": "Con el cariño y la compañía de nuestras familias, padrinos y personas especiales",
+    "grupos": [
+      { "titulo": "Padres y familiares de la primera familia anfitriona", "nombres": ["María del Carmen de los Ángeles Hernández Villaseñor", "José Francisco Alejandro Martínez de la Garza", "Ana Sofía de la Concepción Fernández del Castillo"] },
+      { "titulo": "Padres y familiares de la segunda familia anfitriona", "nombres": ["Guadalupe Estefanía Rodríguez de los Santos", "Juan Sebastián de Jesús González Valenzuela", "María Isabel de la Santísima Trinidad Pérez Ordaz"] },
+      { "titulo": "Padrinos que nos acompañan en esta ocasión especial", "nombres": ["José Miguel de la Cruz Ramírez Montenegro", "Teresa de Jesús Mercedes Méndez de la Fuente"] },
+      { "titulo": "Abuelos y personas a quienes dedicamos este encuentro", "nombres": ["María Antonieta de los Remedios Sánchez Villalobos", "Francisco Javier del Sagrado Corazón López Cervantes", "Rosa María de la Esperanza Gutiérrez del Valle", "Luis Fernando Alejandro de la Torre Castellanos"] }
+    ]
+  },
+  "evento": {
+    "inicio": "2026-12-05T13:00:00-06:00",
+    "fin": "2026-12-05T22:00:00-06:00",
+    "titulo": "Celebración familiar de María Fernanda de los Ángeles y José Alejandro",
+    "descripcion": "Evento ficticio de prueba con ceremonia, recepción, comida familiar, fotografías, actividades para niños y despedida. Los nombres y direcciones son ejemplos para revisar la maquetación y no corresponden a una invitación real.",
+    "lugar": "Recinto de ejemplo para la ceremonia y centro de reuniones de ejemplo para la recepción familiar",
+    "mensajeFinalContador": "La fecha de esta celebración de ejemplo ha llegado. Consulta el itinerario y las indicaciones de acceso para organizar tu visita."
+  },
+  "ubicaciones": [
+    { "titulo": "Ceremonia principal y bienvenida a familiares y amigos", "nombre": "Recinto de ejemplo Nuestra Señora de los Ángeles y de la Esperanza", "direccion": "Dirección ficticia: avenida de los Encuentros Familiares número 1250, edificio principal, entrada lateral junto al jardín, colonia Centro de Ejemplo, municipio de referencia, México.", "hora": "13:00", "mapaUrl": "" },
+    { "titulo": "Recepción, comida y convivencia después de la ceremonia", "nombre": "Centro de reuniones de ejemplo Los Jardines de la Familia y los Recuerdos", "direccion": "Dirección ficticia: prolongación del Camino de los Olivos número 248, salón del segundo patio, acceso por la puerta norte, fraccionamiento de ejemplo Los Encinos, municipio de referencia, México.", "hora": "14:00", "mapaUrl": "" },
+    { "titulo": "Punto de encuentro para quienes lleguen en transporte compartido", "nombre": "Área de reunión de ejemplo junto al acceso principal del estacionamiento", "direccion": "Dirección ficticia: calle del Reencuentro esquina con paseo de la Amistad, frente al módulo de información. Esperar en la zona peatonal señalada para facilitar el descenso de adultos mayores y familias con niños.", "hora": "12:30", "mapaUrl": "" }
+  ],
+  "itinerario": [
+    { "hora": "12:30", "nombre": "Llegada anticipada, orientación de acceso y encuentro con familiares", "ubicacion": "Punto de reunión junto al acceso principal del estacionamiento de ejemplo" },
+    { "hora": "13:00", "nombre": "Inicio de la ceremonia y palabras de bienvenida de las familias anfitrionas", "ubicacion": "Salón principal del recinto de ejemplo Nuestra Señora de los Ángeles" },
+    { "hora": "13:45", "nombre": "Fotografía de grupo y traslado organizado hacia la recepción", "ubicacion": "Jardín exterior y acceso lateral del recinto de la ceremonia" },
+    { "hora": "14:00", "nombre": "Recepción de invitados y asignación de lugares para la comida familiar", "ubicacion": "Segundo patio del centro de reuniones de ejemplo Los Jardines" },
+    { "hora": "15:00", "nombre": "Comida, brindis y agradecimiento a quienes viajaron para acompañarnos", "ubicacion": "Área principal de mesas y convivencia familiar" },
+    { "hora": "16:30", "nombre": "Actividades infantiles y juegos acompañados para los más pequeños", "ubicacion": "Espacio de actividades junto al jardín de la recepción" },
+    { "hora": "18:00", "nombre": "Fotografías por familia y momento para compartir recuerdos especiales", "ubicacion": "Zona de encuentro junto a la entrada del salón" },
+    { "hora": "20:00", "nombre": "Convivencia, música y conversación antes de la despedida", "ubicacion": "Salón principal y áreas de descanso disponibles" },
+    { "hora": "22:00", "nombre": "Cierre de la celebración y salida por el acceso indicado", "ubicacion": "Entrada principal del centro de reuniones de ejemplo" }
+  ],
+  "confirmacion": {
+    "mensaje": "Para preparar los lugares y organizar la recepción, te pedimos revisar los pases asignados a tu invitación e indicar cuántos adultos y niños asistirán. Puedes escribir un mensaje con las necesidades de acceso o los detalles que quieras compartir con la familia anfitriona. Esta versión contiene una respuesta ficticia precargada para revisar el formulario con textos largos; el botón de confirmación sigue desactivado y no se enviará ni guardará información."
+  },
+  "notas": {
+    "titulo": "Información adicional para organizar la llegada, la estancia y el regreso de todos los invitados",
+    "texto": "Todos los nombres, lugares y direcciones de esta versión son ficticios. Se recomienda revisar que los párrafos se lean completos, que los títulos ocupen tantas líneas como necesiten y que las secciones crezcan sin ocultar contenido. Las personas que lleguen con anticipación podrán esperar en el punto de encuentro descrito; quienes necesiten apoyo para el acceso pueden indicarlo en el mensaje del formulario cuando la integración esté disponible. Las actividades y horarios son ejemplos y pueden modificarse para la invitación definitiva. También incluimos una cadena larga sin espacios para comprobar que el texto pueda partirse sin ensanchar la página: ReferenciaDePruebaParaComprobarElAjusteAutomaticoDeTextosMuyLargosSinEspaciosEnPantallasPequenasYGrandes01234567890123456789. Al terminar la revisión se puede volver a la versión normal sin modificar ni reemplazar su archivo de datos."
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+  --paper: #faf1ef;
+  --ink: #402c16;
+  --floral: #e8c9c3;
+  --taupe: #99837f;
+  --wine: #51252f;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --script: 'Pinyon Script', cursive;
+  --page-gutter: clamp(1.5rem, 6vw, 3.5rem);
+  --section-gap: clamp(4rem, 12vw, 7rem);
+  --control-min-height: 2.75rem;
+}

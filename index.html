@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi bautizo · Jimena Ávila</title>
+  <meta name="theme-color" content="#faf1ef">
+  <meta name="description" content="Acompáñame a celebrar mi bautizo. Invitación de muestra de Jimena Ávila.">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <p id="estado" role="status">Cargando invitación…</p>
+  <noscript>Activa JavaScript para cargar los datos de la invitación.</noscript>
+  <main class="invitation" id="invitacion" hidden>
+    <section class="hero" id="portada" aria-labelledby="titulo">
+      <img class="hero__cross" src="assets/svg/cruz.svg" width="222" height="385" alt="" aria-hidden="true">
+      <p class="hero__intro" data-field="portada.introduccion"></p>
+      <h1 class="hero__title" id="titulo" data-field="portada.titulo"></h1>
+      <p class="hero__name" data-field="portada.protagonista"></p>
+      <a class="hero__more" href="#familia" aria-label="Continuar a mi familia">↓</a>
+    </section>
+    <section class="message" id="mensaje" aria-labelledby="mensaje-titulo">
+      <h2 id="mensaje-titulo" data-field="mensaje.titulo"></h2>
+      <p class="message__text" data-field="mensaje.texto"></p>
+    </section>
+    <section class="family" id="familia" aria-labelledby="familia-titulo">
+      <img class="family__cross" src="assets/svg/cruz.svg" width="222" height="385" alt="" aria-hidden="true">
+      <h2 class="sr-only" id="familia-titulo" data-field="familia.titulo"></h2>
+      <div class="family__groups" id="grupos-familia"></div>
+    </section>
+    <section class="date-section" id="fecha" aria-labelledby="fecha-titulo">
+      <h2 class="sr-only" id="fecha-titulo">Fecha del evento</h2>
+      <time class="date-section__date sr-only" id="fecha-evento" data-event-date></time>
+      <div class="date-display" aria-hidden="true"><span data-date-part="weekday"></span><span data-date-part="day"></span><span data-date-part="month"></span></div>
+      <p class="date-section__hour" data-event-hour></p>
+      <div class="date-section__countdown">
+        <h3>¿Cuánto falta?</h3>
+        <p id="contador"></p>
+      </div>
+      <button class="date-section__calendar" id="agendar" type="button">Añadir al calendario</button>
+    </section>
+    <section class="locations" id="ubicaciones" aria-labelledby="ubicaciones-titulo">
+      <h2 class="sr-only" id="ubicaciones-titulo">Ceremonia y recepción</h2>
+      <div class="locations__list" id="lista-ubicaciones"></div>
+    </section>
+    <section class="itinerary" id="itinerario" aria-labelledby="itinerario-titulo">
+      <h2 id="itinerario-titulo">Itinerario</h2>
+      <ol class="itinerary__list" id="lista-itinerario"></ol>
+    </section>
+    <section class="rsvp" id="confirmacion" aria-labelledby="rsvp-titulo">
+      <h2 id="rsvp-titulo">Confirmar asistencia</h2>
+      <p class="rsvp__guest">Para <span data-field="invitado.nombre"></span></p>
+      <p class="rsvp__message" data-field="confirmacion.mensaje"></p>
+      <dl class="rsvp__passes">
+        <dt>Pases para adultos</dt><dd data-field="invitado.pases.adultos"></dd>
+        <dt>Pases para niños</dt><dd data-field="invitado.pases.ninos"></dd>
+        <dt>Total de pases</dt><dd id="total-pases"></dd>
+      </dl>
+      <!-- Estructura para maquetación; habilitar el envío al integrar la API. -->
+      <form class="rsvp__form" id="formulario-rsvp">
+        <div class="rsvp__field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required></div>
+        <div class="rsvp__field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" required></div>
+        <fieldset class="rsvp__attendance">
+          <legend>¿Asistirás?</legend>
+          <label><input type="radio" name="asistencia" value="si" required> Sí</label>
+          <label><input type="radio" name="asistencia" value="no"> No</label>
+        </fieldset>
+        <div class="rsvp__field"><label for="adultos">Adultos</label><input id="adultos" name="adultos" type="number" min="0" value="0" required></div>
+        <div class="rsvp__field"><label for="ninos">Niños</label><input id="ninos" name="ninos" type="number" min="0" value="0" required></div>
+        <div class="rsvp__field"><label for="comentario">Mensaje</label><textarea id="comentario" name="mensaje" rows="3"></textarea></div>
+        <p id="rsvp-estado">Esta es una invitación de muestra. Las respuestas no se envían.</p>
+        <button type="submit" disabled aria-describedby="rsvp-estado">Confirmar</button>
+      </form>
+    </section>
+    <section class="notes" id="notas" aria-labelledby="notas-titulo">
+      <h2 id="notas-titulo" data-field="notas.titulo"></h2>
+      <p class="notes__text" data-field="notas.texto"></p>
+    </section>
+  </main>
+  <footer class="page-footer">Con mucho cariño <span data-field="portada.protagonista"></span></footer>
+  <!-- Bloques repetibles: su estructura se maqueta aquí, no en JavaScript. -->
+  <template id="grupo-template">
+    <div class="family__group"><h3 class="family__title"></h3><ul class="family__names"></ul></div>
+  </template>
+  <template id="ubicacion-template">
+    <article class="location">
+      <div class="location__visual"><img class="location__icon" width="160" height="180" alt="" aria-hidden="true" hidden><time class="location__time"></time></div>
+      <h3 class="location__title"></h3>
+      <p class="location__name"></p>
+      <p class="location__address"></p>
+      <a class="location__link" target="_blank" rel="noopener noreferrer">Ver ubicación</a>
+    </article>
+  </template>
+  <template id="actividad-template">
+    <li class="itinerary__item"><time class="itinerary__time"></time> <span class="itinerary__name"></span> <span class="itinerary__location"></span></li>
+  </template>
+</body>
+</html>

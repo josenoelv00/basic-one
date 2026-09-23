@@ -1,0 +1,35 @@
+/* Base funcional; conserva los estilos nativos y el foco del navegador. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Evita que grid/flex vuelvan visibles los elementos ocultos. */
+[hidden] {
+  display: none !important;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+iframe {
+  max-inline-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  max-inline-size: 100%;
+}

@@ -1,0 +1,47 @@
+html { scroll-behavior: smooth; }
+body { color: var(--ink); background: #fff url('../images/fondo-floral.webp') center top / 1000px auto repeat-y; font-family: var(--serif); font-size: 1.2rem; line-height: 1.4; }
+h1, h2, h3, p, ul, dl { margin: 0; }
+h1, h2, h3 { font-weight: 400; }
+.invitation { width: min(100%, 46rem); margin-inline: auto; padding: clamp(2.5rem, 7vw, 5rem) var(--page-gutter) 3rem; display: grid; gap: var(--section-gap); overflow-wrap: anywhere; }
+.invitation section { position: relative; min-width: 0; padding: clamp(2rem, 6vw, 3.5rem); background: var(--paper); text-align: center; scroll-margin-top: 2rem; }
+.invitation section * { min-width: 0; }
+.hero { border-radius: 50% 50% 0 0 / 38% 38% 0 0; display: flex; flex-direction: column; align-items: center; min-height: 690px; justify-content: flex-end; }
+.hero__cross { width: 94px; margin: 38px auto 40px; }
+.hero__intro { font-size: 1.25rem; }
+.hero__title { text-transform: uppercase; font-size: clamp(2.5rem, 7vw, 3.5rem); font-weight: 300; letter-spacing: -.055em; margin-top: 1.3rem; }
+.hero__name { font-family: var(--script); font-size: clamp(3.1rem, 9vw, 4.5rem); line-height: 1.2; margin-top: 1.4rem; padding: .15em .08em; }
+.hero__more { color: var(--taupe); text-decoration: none; font-size: 1.6rem; padding: .5rem 1rem; margin-top: 1rem; }
+.family__groups { display: grid; gap: 3rem; }
+.family__cross { display: none; }
+.family__title { font-size: 1.5rem; text-transform: uppercase; line-height: 1.15; max-width: none; text-wrap: balance; overflow-wrap: normal; margin: 0 auto 1rem; }
+.family__names { list-style: none; padding: 0; font-family: var(--script); font-size: 1.85rem; line-height: 1.3; }
+.family--pair .family__groups { grid-template-columns: 1fr 1fr; gap: 2.5rem 0; }
+.family--pair .family__group:first-child { grid-column: 1; grid-row: 1; border-right: 1px solid var(--taupe); padding: 1.5rem .6rem 1.5rem 0; }
+.family--pair .family__group:nth-child(2) { grid-column: 2; grid-row: 2; border-left: 1px solid var(--taupe); padding: 1.5rem 0 1.5rem .6rem; }
+.family--pair .family__cross { display: block; position: absolute; top: 4.8rem; right: 20%; width: 43px; }
+.invitation .date-section { border-radius: 50% / 30%; padding-block: 5rem; }
+.date-display { display: grid; border-inline: 1px solid var(--taupe); max-width: 75%; margin: 0 auto; padding: .5rem 1rem; text-transform: uppercase; line-height: 1.15; font-weight: 300; font-size: clamp(1.6rem, 5vw, 2.3rem); }
+[data-date-part='day'] { font-size: clamp(5.5rem, 19vw, 8.5rem); line-height: 1; }
+.date-section__hour { font-size: clamp(2rem, 6vw, 3rem); font-weight: 300; margin-top: 1.3rem; }
+.date-section__countdown { margin: 2.4rem auto 1.3rem; max-width: 24ch; font-size: 1rem; }
+.date-section__countdown h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
+.invitation .locations { background: transparent; padding-bottom: 6rem; isolation: isolate; }
+.locations::before { content: ''; position: absolute; z-index: -1; inset: 0; background: var(--paper); clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 2.8rem),0 100%); }
+.locations__list { display: grid; gap: 3.5rem; }
+.location__visual { display: flex; align-items: flex-end; justify-content: center; gap: 1.4rem; margin-bottom: 1.5rem; }
+.location:nth-child(odd) .location__visual { flex-direction: row-reverse; }
+.location__icon { width: 112px; height: 135px; object-fit: contain; }
+.location__time { font-size: 2.1rem; font-weight: 300; white-space: nowrap; }
+.location__title { font-size: 1.7rem; margin-bottom: .5rem; }
+.location__name, .location__address { font-size: 1.2rem; }
+.invitation .rsvp { border-radius: 2.5rem; }
+.rsvp h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+.rsvp__guest { font-family: var(--script); font-size: 2rem; margin-top: 1rem; }
+.rsvp__message { margin-top: .6rem; font-size: 1.15rem; }
+.message__text, .notes__text { white-space: pre-line; margin-top: 1rem; }
+.itinerary__list { text-align: left; padding-left: 1.2rem; }
+.itinerary__item { margin-top: 1rem; }
+.page-footer { text-align: center; padding: 0 1.5rem 3rem; font-size: .95rem; }
+.page-footer span { display: block; font-family: var(--script); font-size: 2.2rem; }
+body > [role='status'], noscript { display: block; width: fit-content; max-width: 90%; margin: 2rem auto; padding: 1rem; background: var(--paper); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }

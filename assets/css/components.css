@@ -1,0 +1,16 @@
+button, .location__link { min-height: var(--control-min-height); display: inline-flex; align-items: center; justify-content: center; padding: .7rem 1.3rem; border: 1px solid var(--taupe); background: transparent; border-radius: 3px; color: var(--ink); font-size: 1.05rem; text-decoration: none; cursor: pointer; transition: background-color .2s; }
+button:hover:not(:disabled), .location__link:hover { background: #edddd8; }
+button:disabled { cursor: not-allowed; background: #e7d9d4; color: #67564a; border-color: #cdb9af; }
+:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+.location__link { margin-top: 1rem; }
+.rsvp__passes { display: grid; grid-template-columns: 1fr auto; gap: .45rem 1rem; text-align: left; margin: 1.8rem 0; padding-block: 1rem; border-block: 1px solid #d5bfba; font-size: 1.05rem; }
+.rsvp__passes dd { margin: 0; }
+.rsvp__form { display: grid; grid-template-columns: minmax(0,1fr); gap: 1.15rem; text-align: left; font-size: 1.05rem; }
+.rsvp__field { display: grid; gap: .35rem; }
+.rsvp__field input, .rsvp__field textarea { width: 100%; min-height: 2.75rem; padding: .65rem .8rem; color: var(--ink); background: #fffaf8; border: 1px solid #b49a92; border-radius: 3px; font-size: 1.1rem; }
+.rsvp__field textarea { resize: vertical; }
+.rsvp__attendance { margin: 0; padding: .5rem 0 0; border: 0; }
+.rsvp__attendance label { display: inline-flex; align-items: center; min-height: 2.75rem; gap: .5rem; margin-right: 1.5rem; cursor: pointer; }
+.rsvp__attendance input { width: 1.1rem; height: 1.1rem; accent-color: var(--wine); }
+#rsvp-estado { font-size: .95rem; color: #705b50; }
+.rsvp__form button { width: 100%; }
