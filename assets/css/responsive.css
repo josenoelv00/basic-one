@@ -18,7 +18,7 @@
   .rsvp__field:nth-child(1), .rsvp__field:nth-child(2), .rsvp__attendance, .rsvp__field:has(textarea), #rsvp-estado, .rsvp__form > button { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  .invitation { scroll-behavior: auto; }
   button, .location__link { transition: none; }
 }
 
@@ -28,3 +28,4 @@
   .family--pair .family__group:nth-child(2) { border-top: 1px solid #d5bfba; padding-top: 2rem; }
   .family--pair .family__cross { position: static; width: 32px; margin: 0 auto 2rem; }
 }
+
