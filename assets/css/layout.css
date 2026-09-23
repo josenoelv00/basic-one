@@ -55,3 +55,6 @@ body > [role='status'], noscript { display: block; width: fit-content; max-width
 }
 .page-footer { scroll-snap-align: end; }
 
+/* La tarjeta familiar conserva su proporción natural sin relleno de pantalla. */
+.invitation > .family { min-block-size: auto; }
+
